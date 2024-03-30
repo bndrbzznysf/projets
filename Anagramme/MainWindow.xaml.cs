@@ -57,7 +57,7 @@ namespace AnagrammeWPF
             Random rand = new Random();
             StringBuilder melange = new StringBuilder();
             for (int i = 0; i < chaine.Length; i++) {
-                melange.Insert(rand.Next(melange.Length+1), chaine[i]);
+                melange.Insert(rand.Next(melange.Length), chaine[i]);
              }
             return melange.ToString();
         }
