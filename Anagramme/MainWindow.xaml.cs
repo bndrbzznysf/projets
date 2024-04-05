@@ -35,12 +35,35 @@ namespace AnagrammeWPF
         }
 
 
-        //partie 1
+
         private void initialisation()
         {
-            tabMots = new String[]{"LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI", "DIMANCHE"};
-            essais = 1;
+            tabMots = new String[]
+            {"AVION",
+            "BALAI",
+            "VOITURE",
+            "LIVRE",
+            "ARBRE",
+            "POMME",
+            "CLEMENTINE",
+            "CRAYON",
+            "LIMITES",
+            "OISEAU",
+            "TOMATE",
+            "CHAT",
+            "DRAPEAU",
+            "SOURIS",
+            "ORDINATEUR",
+            "CHAISE",
+            "FOURMI",
+            "JOURNAL",
+            "OXYGENE",
+            "CROCHET",
+            "TROUSSE",
+            "ECRAN"};
+
             mot = tabMots[0];
+            essais = 1;
             LBLMotADeviner.Content = melanger(mot);
         }
 
