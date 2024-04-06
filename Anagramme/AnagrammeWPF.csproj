@@ -5,6 +5,19 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Waluigi.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Waluigi.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Waluigi.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Waluigi.ico" />
+  </ItemGroup>
 
 </Project>

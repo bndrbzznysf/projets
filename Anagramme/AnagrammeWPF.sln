@@ -5,6 +5,11 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnagrammeWPF", "AnagrammeWPF.csproj", "{76A80909-DE68-40A0-A198-FEF166171135}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{A4831526-3A29-4A6C-84DF-38C63ACB9BED}"
+	ProjectSection(SolutionItems) = preProject
+		Waluigi.ico = Waluigi.ico
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
