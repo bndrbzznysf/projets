@@ -89,7 +89,7 @@ namespace AnagrammeWPF
         private void nouvellePartie()
         {
             Random rand = new Random();
-            mot = tabMots[rand.Next(tabMots.Length+1)];
+            mot = tabMots[rand.Next(tabMots.Length)];
             essais = 0;
             LBLMotADeviner.Content = melanger(mot);
             LSTBessais.Items.Clear();
@@ -101,7 +101,7 @@ namespace AnagrammeWPF
             if (MessageBox.Show("Vous avez trouvé le mot !\nVoulez-vous rejouer ?", "Bravo ! ", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
                 nbParties++;
-                LSTBhistorique.Items.Add("Partie " + nbParties + " - " + mot + " Gagnée - " + essais + " essais");
+                LSTBhistorique.Items.Add("Partie " + nbParties + " - " + mot + " - Gagnée - " + essais + " essais");
                 nouvellePartie();
             }
             else Application.Current.Shutdown();
@@ -115,7 +115,7 @@ namespace AnagrammeWPF
                 if (MessageBox.Show("Le mot à trouver était : " + mot + "\nVoulez-vous rejouer ?", "Perdu ! ", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                 {
                     nbParties++;
-                    LSTBhistorique.Items.Add("Partie " + nbParties + " - " + mot + " Perdue - " + essais + " essais");
+                    LSTBhistorique.Items.Add("Partie " + nbParties + " - " + mot + " - Perdue - " + essais + " essais");
                     nouvellePartie();
                 }
                 else Application.Current.Shutdown();
@@ -135,9 +135,12 @@ namespace AnagrammeWPF
 
         private void BTNrejouer_Click(object sender, RoutedEventArgs e)
         {
-            nbParties++;
-            LSTBhistorique.Items.Add("Partie " + nbParties + " - " + mot + " Abandonnée - " + essais + " essais");
-            nouvellePartie();
+            if (MessageBox.Show("Voules-vous vraiment rejouer ?", "Rejouer ? ", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
+                nbParties++;
+                LSTBhistorique.Items.Add("Partie " + nbParties + " - " + mot + " - Abandonnée - " + essais + " essais");
+                nouvellePartie();
+            }
         }
 
         private void BTNquitter_Click(object sender, RoutedEventArgs e)

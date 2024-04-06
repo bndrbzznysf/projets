@@ -5,18 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AnagrammeWPF"
         mc:Ignorable="d"
-        Title="Anagramme" Height="475" Width="574" ResizeMode="CanMinimize" Loaded="Window_Loaded">
+        Title="Anagramme" Height="475" Width="574" ResizeMode="CanMinimize" Loaded="Window_Loaded" Background="AliceBlue">
     <Grid>
-        <Label Content="Mot à deviner :" Margin="10,10,271,394" Height="NaN" Width="NaN"/>
-        <Label Name="LBLMotADeviner" FontSize="20" Content="MOT" Margin="31,38,31,361" Height="NaN" Width="NaN"/>
-        <GroupBox Name="GPBproposition" Header="Proposition" Margin="10,85,287,255"/>
-        <GroupBox Name="GPBhistorique" Header="Historique des parties" Margin="292,85,10,57"/>
-        <GroupBox Name="GPBessais" Header="Essais" Margin="10,184,287,10"/>
-        <Button Name="BTNtester" Content="Tester" Margin="210,123,306,288" Click="BTNtester_Click" RenderTransformOrigin="0.5,1.346"/>
+        <Label Content="Mot à deviner :" FontWeight="Bold" Margin="9,30,272,374" Height="NaN" Width="NaN"/>
+        <Label Name="LBLMotADeviner"  FontSize="20" Content="MOT" Margin="116,25,-54,374" Height="NaN" Width="NaN"/>
+        
+        <GroupBox Name="GPBproposition" Header="Proposition" FontWeight="Bold" Margin="10,85,287,255"/>
+        <GroupBox Name="GPBhistorique" Header="Historique des parties" FontWeight="Bold" Margin="292,54,10,78"/>
+        <GroupBox Name="GPBessais" Header="Essais" FontWeight="Bold" Margin="10,184,287,10"/>
+        
+        <Button Name="BTNtester" Content="Tester" Margin="196,123,312,280" Click="BTNtester_Click" RenderTransformOrigin="0.5,1.346"/>
         <Button Name="BTNrejouer" Content="Rejouer" Margin="335,386,164,20" Click="BTNrejouer_Click" RenderTransformOrigin="0.5,0.501"/>
         <Button Name="BTNquitter" Content="Quitter" Margin="452,386,48,20" Click="BTNquitter_Click"/>
-        <TextBox Name="TXTBproposition" TextWrapping="Wrap" Text="" Margin="22,123,383,288" TextChanged="TXTBproposition_TextChanged"/>
+
+        <TextBox Name="TXTBproposition" TextWrapping="Wrap" Text="" Margin="22,123,383,280" TextChanged="TXTBproposition_TextChanged"/>
+
         <ListBox Name="LSTBessais" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="22,217,300,20"/>
-        <ListBox Name="LSTBhistorique" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="302,108,20,66"/>
+        <ListBox Name="LSTBhistorique" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="302,85,20,95"/>
     </Grid>
 </Window>
