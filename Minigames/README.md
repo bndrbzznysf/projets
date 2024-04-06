@@ -7,7 +7,7 @@ Télécharger le dossier Minigames et le décompresser. Lancer le fichier miniga
 ## Jeu
 
 ### Pendu
-Un mot est choisi aléatoirement parmi une liste et l'objectif est le deviner en un nombre limité de tentatives.
+Un mot est choisi aléatoirement parmi une liste et l'objectif est le deviner en un nombre limité de tentatives, le jeu se termine lorsque le mot est deviné ou lorsque les 10 tentatives autorisées sont toutes utilisées.
 
 
 ### Mastermind 
