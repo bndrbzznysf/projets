@@ -5,6 +5,7 @@ int main()
 {
     string nom;
     Image img; int choix;
+
     do{
         nom = saisieNomFichier();
         img = Image(nom);
@@ -13,10 +14,11 @@ int main()
         vector<int> histGris; float lum; int rogne, facteur;
 
         switch(choix){
+
             case 1: img = img.copie(); savePicture(img); break;
             case 2: {img = img.composanteRouge(); savePicture(img); break;}
             case 3: int R, V, B;
-                cout<<"Veuillez saisir les composantes de Rouge, Vert et Bleu du pixel a rechercher dans l'image : "<<endl; cin >>R>>V>>B;
+                cout<<"Veuillez saisir les composantes de Rouge, Vert et Bleu du pixel à rechercher dans l'image : "<<endl; cin >>R>>V>>B;
                 if(img.detection(R, V, B)) cout<<"Le pixel se trouve dans l'image"<<endl; else cout<<"Le pixel ne se trouve pas dans l'image"<<endl; break;
             case 4: img = img.niveauGris(); savePicture(img); break;
             case 5: int seuil; cout<<"Veuillez saisir un seuil : "<<endl; cin>>seuil; img = img.noirEtBlanc(seuil); savePicture(img); break;
@@ -33,13 +35,11 @@ int main()
             case 15: img = img.rotationD(); savePicture(img); break;
             case 16: img = img.rotationG(); savePicture(img); break;
             case 17: cout<<"Par quel facteur souhaitez-vous agrandir votre image ? "; cin>>facteur; img = img.agrandissement(facteur); savePicture(img); break;
-
-            //AJOUT DE ROTATION COULEUR AU MENU DE FONCTIONNALITES
             case 18: img.rotationCouleur(); savePicture(img); break;
             case FIN: cout<<"Au revoir ! "; break;
-            default: cout<<"Ceci n'est pas une option proposee... ";
+            default: cout<<"Ceci n'est pas une option proposée... ";
         }
-    }while (choix!=FIN);
+    } while (choix!=FIN);
 
     return 0;
 }
