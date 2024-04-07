@@ -4,6 +4,8 @@
 
 Télécharger le dossier editionPhoto et le compresser. Lancer le programme editionPhoto.exe. Les photos à éditer doivent être placées dans le même dossier que le fichier editionPhoto.exe et doivent être au format .ppm ASCII, pas BRUT, et ils doivent également pour extension .ppm, et plus l'image est volumineuse plus elle mettra de temps à charger.
 
+
+
 ## Utilisation 
 
 Une fois le logiciel lancé, plusieurs fonctionnalités sont disponibles pour éditer les photos, il suffit de rentrer dans le terminal le chiffre correspondant à la fonctionnalité souhaitée : 
