@@ -1,4 +1,4 @@
-# Base de données SQLLITE
+# Base de données SQLITE
 
 Il s'agit d'un projet scolaire réalisé en binome afin de développer nos compétences en conception et modélisation de base de données ainsi qu'en écriture de script de création, d'insertion et d'interrogation de base de données.
 Ce dossier comprend également la base de données que nous avons créé. Dans le cadre de ce projet, nous avons dû interviewer une entreprise afin de récolter des informations sur des données qu'elle stockait et traitait. 
