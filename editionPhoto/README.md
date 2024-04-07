@@ -2,7 +2,7 @@
 
 ## Installation
 
-Télécharger le dossier editionPhoto et le compresser. Lancer le programme editionPhoto.exe. Les photos à éditer doivent être placées dans le même dossier que le fichier editionPhoto.exe et doivent être au format .ppm ASCII, pas BRUT, et ils doivent également pour extension .ppm, et plus l'image est volumineuse plus elle mettra de temps à charger.
+Télécharger le dossier editionPhoto et le compresser. Lancer le programme editionPhoto.exe. Les photos à éditer doivent être placées dans le même dossier que le fichier editionPhoto.exe et doivent être au format .ppm ASCII, pas BRUT, et ils doivent également pour extension .ppm, et plus l'image est volumineuse plus elle mettra de temps à charger. Trois images sont fournies afin de pouvoir faire des tests : Couleur.ppm, Ara_ararauna.ppm et France.ppm
 
 
 
