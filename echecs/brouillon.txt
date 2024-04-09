@@ -1,0 +1,8 @@
+A faire : 
+
+- GUI Swing (yaayyyy)
+- Plateau (fait??)
+- Pions
+- Jeu
+- Interactions
+- Visuel
