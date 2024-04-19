@@ -93,8 +93,10 @@ while running:
     #Snake
     pygame.draw.rect(window, "red", apple)
     snake = pygame.Rect(player_pos, (snake_size, snake_size))
-    snake_body=snake_body[:-1]
-    snake_body.insert(0, snake)
+
+    if not pause:
+        snake_body=snake_body[:-1]
+        snake_body.insert(0, snake)
     
     for i in range(len(snake_body)):
         pygame.draw.rect(window, "green", snake_body[i])
