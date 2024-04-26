@@ -1,4 +1,4 @@
-#Jeu du Snake
+# Jeu du Snake
 
 ## Installation
 
