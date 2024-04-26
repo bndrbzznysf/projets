@@ -2,7 +2,7 @@
 
 ## Installation
 
-Télécharger le dossier Minigames et le décompresser. Lancer le fichier minigames.py
+Télécharger le dossier Minigames et le décompresser. Lancer le fichier minigames.exe
 
 ## Jeu
 
