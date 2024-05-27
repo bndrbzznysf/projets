@@ -18,7 +18,7 @@ namespace MinesweeperWPF
     {
 
         private int gridSize;
-        private int nbMines = 10;
+        private int nbMines;
         private int nbCellOpen = 0;
         private int[,] matrix;
 
@@ -243,6 +243,7 @@ namespace MinesweeperWPF
             if (ITEM_9 != null) ITEM_9.IsChecked = false;
             if (ITEM_16 != null) ITEM_16.IsChecked = false;
             gridSize = 8;
+            nbMines=10;
             initialisation();
         }
 
@@ -252,6 +253,7 @@ namespace MinesweeperWPF
             if (ITEM_9 != null) ITEM_9.IsChecked = true;
             if (ITEM_16 != null) ITEM_16.IsChecked = false;
             gridSize = 9;
+            nbMines=12;
             initialisation();
         }
 
@@ -261,6 +263,7 @@ namespace MinesweeperWPF
             if (ITEM_9 != null) ITEM_9.IsChecked = false;
             if (ITEM_16 != null) ITEM_16.IsChecked = true;
             gridSize = 16;
+            nbMines=40;
             initialisation();
         }
 
