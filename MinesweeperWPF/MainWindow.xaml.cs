@@ -231,10 +231,6 @@ namespace MinesweeperWPF
         }
 
 
-        private void BTN_reset(object sender, RoutedEventArgs e)
-        {
-            initialisation();
-        }
 
 
         private void taille8_checked(object sender, RoutedEventArgs e)
@@ -243,7 +239,7 @@ namespace MinesweeperWPF
             if (ITEM_9 != null) ITEM_9.IsChecked = false;
             if (ITEM_16 != null) ITEM_16.IsChecked = false;
             gridSize = 8;
-            nbMines=10;
+            nbMines = 10;
             initialisation();
         }
 
@@ -253,7 +249,7 @@ namespace MinesweeperWPF
             if (ITEM_9 != null) ITEM_9.IsChecked = true;
             if (ITEM_16 != null) ITEM_16.IsChecked = false;
             gridSize = 9;
-            nbMines=12;
+            nbMines = 12;
             initialisation();
         }
 
@@ -263,7 +259,7 @@ namespace MinesweeperWPF
             if (ITEM_9 != null) ITEM_9.IsChecked = false;
             if (ITEM_16 != null) ITEM_16.IsChecked = true;
             gridSize = 16;
-            nbMines=40;
+            nbMines = 40;
             initialisation();
         }
 
